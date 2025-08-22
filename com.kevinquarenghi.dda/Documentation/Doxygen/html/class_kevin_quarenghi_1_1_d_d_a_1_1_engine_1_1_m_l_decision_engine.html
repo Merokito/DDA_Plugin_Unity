@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>com.kevinquarenghi.dda: Riferimenti per la classe KevinQuarenghi.DDA.Engine.MLDecisionEngine</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">com.kevinquarenghi.dda<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_kevin_quarenghi_1_1_d_d_a_1_1_engine_1_1_m_l_decision_engine.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membri pubblici</a> &#124;
+<a href="class_kevin_quarenghi_1_1_d_d_a_1_1_engine_1_1_m_l_decision_engine-members.html">Elenco di tutti i membri</a>  </div>
+  <div class="headertitle"><div class="title">Riferimenti per la classe KevinQuarenghi.DDA.Engine.MLDecisionEngine</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>DecisionEngine che utilizza ONNX Runtime per inferenza di più modelli ONNX, uno per ogni metrica di gioco. L’utente finale deve solo trascinare i .onnx in <a class="el" href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html" title="ScriptableObject per la configurazione dell&#39;engine ML. Contiene l&#39;array di TextAsset ....">MLConfigSO</a>; tutti i nomi delle metriche e l’ordine di elaborazione sono gestiti automaticamente.  
+ <a href="#details">Continua...</a></p>
+<div class="dynheader">
+Diagramma delle classi per KevinQuarenghi.DDA.Engine.MLDecisionEngine</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_kevin_quarenghi_1_1_d_d_a_1_1_engine_1_1_m_l_decision_engine.png" usemap="#KevinQuarenghi.DDA.Engine.MLDecisionEngine_map" alt=""/>
+  <map id="KevinQuarenghi.DDA.Engine.MLDecisionEngine_map" name="KevinQuarenghi.DDA.Engine.MLDecisionEngine_map">
+<area href="interface_kevin_quarenghi_1_1_d_d_a_1_1_engine_1_1_i_decision_engine.html" title="Contratto generico per un engine DDA. Implementazioni possono essere rule-based, fuzzy o ML." alt="KevinQuarenghi.DDA.Engine.IDecisionEngine" shape="rect" coords="0,0,288,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membri pubblici</h2></td></tr>
+<tr class="memitem:ab99d8f78852660f6a38a943caadb00e3" id="r_ab99d8f78852660f6a38a943caadb00e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab99d8f78852660f6a38a943caadb00e3">MLDecisionEngine</a> (<a class="el" href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html">MLConfigSO</a> config)</td></tr>
+<tr class="memdesc:ab99d8f78852660f6a38a943caadb00e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Costruisce l’engine ML caricando tutti i modelli da <em>config</em> . Ordina i modelAssets alfabeticamente per nome e legge automaticamente i nomi degli output da ciascun modello.  <br /></td></tr>
+<tr class="separator:ab99d8f78852660f6a38a943caadb00e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890d003d64e1cb86235a1d87201a811a" id="r_a890d003d64e1cb86235a1d87201a811a"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a890d003d64e1cb86235a1d87201a811a">Evaluate</a> (Dictionary&lt; string, float &gt; normalizedMetrics)</td></tr>
+<tr class="memdesc:a890d003d64e1cb86235a1d87201a811a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Esegue l'inferenza su tutti i modelli, creando un unico input tensor [1, featureCount] e restituendo un dizionario mappa({metrica -&gt; delta predetto}).  <br /></td></tr>
+<tr class="separator:a890d003d64e1cb86235a1d87201a811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b7c8a8d5b9231ced78d8f6d2150447" id="r_a71b7c8a8d5b9231ced78d8f6d2150447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71b7c8a8d5b9231ced78d8f6d2150447">Dispose</a> ()</td></tr>
+<tr class="memdesc:a71b7c8a8d5b9231ced78d8f6d2150447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rilascia le risorse native di ciascuna sessione ONNX Runtime.  <br /></td></tr>
+<tr class="separator:a71b7c8a8d5b9231ced78d8f6d2150447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<div class="textblock"><p>DecisionEngine che utilizza ONNX Runtime per inferenza di più modelli ONNX, uno per ogni metrica di gioco. L’utente finale deve solo trascinare i .onnx in <a class="el" href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html" title="ScriptableObject per la configurazione dell&#39;engine ML. Contiene l&#39;array di TextAsset ....">MLConfigSO</a>; tutti i nomi delle metriche e l’ordine di elaborazione sono gestiti automaticamente. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_m_l_decision_engine_8cs_source.html#l00019">19</a> del file <a class="el" href="_m_l_decision_engine_8cs_source.html">MLDecisionEngine.cs</a>.</p>
+</div><h2 class="groupheader">Documentazione dei costruttori e dei distruttori</h2>
+<a id="ab99d8f78852660f6a38a943caadb00e3" name="ab99d8f78852660f6a38a943caadb00e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99d8f78852660f6a38a943caadb00e3">&#9670;&#160;</a></span>MLDecisionEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KevinQuarenghi.DDA.Engine.MLDecisionEngine.MLDecisionEngine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html">MLConfigSO</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Costruisce l’engine ML caricando tutti i modelli da <em>config</em> . Ordina i modelAssets alfabeticamente per nome e legge automaticamente i nomi degli output da ciascun modello. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Configurazione ML con: <ul>
+<li>
+<a class="el" href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html#a4c620f75be481acd563afeedefaefc0f" title="Array di asset TextAsset contenenti i modelli .onnx. L&#39;ordine di elaborazione viene determinato alfab...">MLConfigSO.modelAssets</a>: array di TextAsset .onnx importati tramite <a class="el" href="class_onnx_scripted_importer.html" title="ScriptedImporter che permette a Unity di trattare i file �.onnx� come TextAsset, esponendo i byte gre...">OnnxScriptedImporter</a> con Base64 dei byte originali.  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definizione alla linea <a class="el" href="_m_l_decision_engine_8cs_source.html#l00041">41</a> del file <a class="el" href="_m_l_decision_engine_8cs_source.html">MLDecisionEngine.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>        {</div>
+<div class="line"><span class="lineno">   43</span>            <span class="keywordflow">if</span> (config.<a class="code hl_variable" href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html#a4c620f75be481acd563afeedefaefc0f">modelAssets</a> == <span class="keyword">null</span> || config.<a class="code hl_variable" href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html#a4c620f75be481acd563afeedefaefc0f">modelAssets</a>.Length == 0)</div>
+<div class="line"><span class="lineno">   44</span>            {</div>
+<div class="line"><span class="lineno">   45</span>                Debug.LogError(<span class="stringliteral">&quot;[DDA] MLConfigSO: assegnare almeno un modello ONNX in modelAssets!&quot;</span>);</div>
+<div class="line"><span class="lineno">   46</span>            }</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>            <span class="comment">// Ordina i modelli per nome (es. dda_multi_Difficulty, then _Experience, ...)</span></div>
+<div class="line"><span class="lineno">   49</span>            var sortedAssets = config.<a class="code hl_variable" href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html#a4c620f75be481acd563afeedefaefc0f">modelAssets</a>.OrderBy(a =&gt; a.name).ToArray();</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>            _env = OrtEnv.Instance();</div>
+<div class="line"><span class="lineno">   52</span>            <span class="comment">// Crea una sessione per ciascun modello ONNX</span></div>
+<div class="line"><span class="lineno">   53</span>            _sessions = sortedAssets</div>
+<div class="line"><span class="lineno">   54</span>                .Select(asset =&gt; <span class="keyword">new</span> InferenceSession(Convert.FromBase64String(asset.text)))</div>
+<div class="line"><span class="lineno">   55</span>                .ToArray();</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>            <span class="comment">// Estrae il nome dell&#39;unico input tensor e la dimensione delle feature</span></div>
+<div class="line"><span class="lineno">   58</span>            _inputName = _sessions[0].InputMetadata.Keys.First();</div>
+<div class="line"><span class="lineno">   59</span>            var inputDims = _sessions[0].InputMetadata[_inputName].Dimensions;</div>
+<div class="line"><span class="lineno">   60</span>            <span class="keywordflow">if</span> (inputDims.Length != 2)</div>
+<div class="line"><span class="lineno">   61</span>            {</div>
+<div class="line"><span class="lineno">   62</span>                Debug.LogError($<span class="stringliteral">&quot;[DDA] Input ONNX inaspettato: attesi 2 assi (batch,features), trovati {inputDims.Length}&quot;</span>);</div>
+<div class="line"><span class="lineno">   63</span>            }</div>
+<div class="line"><span class="lineno">   64</span>            _featureCount = inputDims[1];</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>            <span class="comment">// Legge automaticamente i nomi degli output (graph.output) da ciascun modello</span></div>
+<div class="line"><span class="lineno">   67</span>            _metricNames = _sessions.Select(s =&gt; s.OutputMetadata.Keys.First()).ToArray();</div>
+<div class="line"><span class="lineno">   68</span>            <span class="keywordflow">if</span> (_metricNames.Length != _featureCount)</div>
+<div class="line"><span class="lineno">   69</span>            {</div>
+<div class="line"><span class="lineno">   70</span>                Debug.LogWarning($<span class="stringliteral">&quot;[DDA] Numero modelli ({_metricNames.Length}) diverso da featureCount ({_featureCount})&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span>            }</div>
+<div class="line"><span class="lineno">   72</span>        }</div>
+<div class="ttc" id="aclass_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o_html_a4c620f75be481acd563afeedefaefc0f"><div class="ttname"><a href="class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html#a4c620f75be481acd563afeedefaefc0f">KevinQuarenghi.DDA.Config.MLConfigSO.modelAssets</a></div><div class="ttdeci">TextAsset[] modelAssets</div><div class="ttdoc">Array di asset TextAsset contenenti i modelli .onnx. L&#39;ordine di elaborazione viene determinato alfab...</div><div class="ttdef"><b>Definition</b> <a href="_m_l_config_s_o_8cs_source.html#l00027">MLConfigSO.cs:27</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni membro</h2>
+<a id="a71b7c8a8d5b9231ced78d8f6d2150447" name="a71b7c8a8d5b9231ced78d8f6d2150447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b7c8a8d5b9231ced78d8f6d2150447">&#9670;&#160;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KevinQuarenghi.DDA.Engine.MLDecisionEngine.Dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rilascia le risorse native di ciascuna sessione ONNX Runtime. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_m_l_decision_engine_8cs_source.html#l00113">113</a> del file <a class="el" href="_m_l_decision_engine_8cs_source.html">MLDecisionEngine.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  114</span>        {</div>
+<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">foreach</span> (var session <span class="keywordflow">in</span> _sessions)</div>
+<div class="line"><span class="lineno">  116</span>                session.Dispose();</div>
+<div class="line"><span class="lineno">  117</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a890d003d64e1cb86235a1d87201a811a" name="a890d003d64e1cb86235a1d87201a811a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a890d003d64e1cb86235a1d87201a811a">&#9670;&#160;</a></span>Evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt; string, float &gt; KevinQuarenghi.DDA.Engine.MLDecisionEngine.Evaluate </td>
+          <td>(</td>
+          <td class="paramtype">Dictionary&lt; string, float &gt;</td>          <td class="paramname"><span class="paramname"><em>normalizedMetrics</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Esegue l'inferenza su tutti i modelli, creando un unico input tensor [1, featureCount] e restituendo un dizionario mappa({metrica -&gt; delta predetto}). </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normalizedMetrics</td><td>Dizionario nomeMetrica -&gt; valore normalizzato [0..1]. Deve contenere almeno tutte le chiavi presenti in <code>_metricNames</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Dizionario nomeMetrica -&gt; Δ predetto da ciascun modello. </dd></dl>
+
+<p>Implementa <a class="el" href="interface_kevin_quarenghi_1_1_d_d_a_1_1_engine_1_1_i_decision_engine.html#a866f0afad333c4e20b7b442d787ffecd">KevinQuarenghi.DDA.Engine.IDecisionEngine</a>.</p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_m_l_decision_engine_8cs_source.html#l00085">85</a> del file <a class="el" href="_m_l_decision_engine_8cs_source.html">MLDecisionEngine.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>        {</div>
+<div class="line"><span class="lineno">   87</span>            <span class="comment">// Popola il buffer secondo l&#39;ordine di _metricNames</span></div>
+<div class="line"><span class="lineno">   88</span>            var buffer = <span class="keyword">new</span> <span class="keywordtype">float</span>[_featureCount];</div>
+<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _featureCount; i++)</div>
+<div class="line"><span class="lineno">   90</span>            {</div>
+<div class="line"><span class="lineno">   91</span>                var key = _metricNames[i];</div>
+<div class="line"><span class="lineno">   92</span>                buffer[i] = normalizedMetrics.TryGetValue(key, out var v) ? v : 0f;</div>
+<div class="line"><span class="lineno">   93</span>            }</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>            <span class="comment">// Crea un DenseTensor&lt;float&gt; di shape [1, featureCount]</span></div>
+<div class="line"><span class="lineno">   96</span>            var inputTensor = <span class="keyword">new</span> DenseTensor&lt;float&gt;(buffer, <span class="keyword">new</span>[] { 1, _featureCount });</div>
+<div class="line"><span class="lineno">   97</span>            var container = NamedOnnxValue.CreateFromTensor(_inputName, inputTensor);</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>            var result = <span class="keyword">new</span> Dictionary&lt;string, float&gt;(_sessions.Length);</div>
+<div class="line"><span class="lineno">  100</span>            <span class="comment">// Esegue inferenza su ciascun modello e mappa l&#39;output al nome metrica</span></div>
+<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _sessions.Length; i++)</div>
+<div class="line"><span class="lineno">  102</span>            {</div>
+<div class="line"><span class="lineno">  103</span>                <span class="keyword">using </span>var outputs = _sessions[i].Run(<span class="keyword">new</span>[] { container });</div>
+<div class="line"><span class="lineno">  104</span>                var outTensor = outputs.First().AsTensor&lt;<span class="keywordtype">float</span>&gt;();</div>
+<div class="line"><span class="lineno">  105</span>                result[_metricNames[i]] = outTensor.Length &gt; 0 ? outTensor.GetValue(0) : 0f;</div>
+<div class="line"><span class="lineno">  106</span>            }</div>
+<div class="line"><span class="lineno">  107</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  108</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>La documentazione per questa classe è stata generata a partire dal seguente file:<ul>
+<li><a class="el" href="_m_l_decision_engine_8cs_source.html">MLDecisionEngine.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_kevin_quarenghi.html">KevinQuarenghi</a></li><li class="navelem"><a class="el" href="namespace_kevin_quarenghi_1_1_d_d_a.html">DDA</a></li><li class="navelem"><a class="el" href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_engine.html">Engine</a></li><li class="navelem"><a class="el" href="class_kevin_quarenghi_1_1_d_d_a_1_1_engine_1_1_m_l_decision_engine.html">MLDecisionEngine</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

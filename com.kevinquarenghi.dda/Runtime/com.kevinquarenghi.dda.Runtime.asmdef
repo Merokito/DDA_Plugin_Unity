@@ -1,0 +1,15 @@
+{
+  "name": "com.kevinquarenghi.dda.Runtime",
+  "rootNamespace": "",
+  "references": [
+    "Unity.Barracuda"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": []
+}

@@ -1,0 +1,16 @@
+{
+  "name": "com.kevinquarenghi.dda",
+  "version": "0.1.0",
+  "displayName": "Dynamic Difficulty Adjustment",
+  "description": "A generic, channel-based DDA plugin with ONNX Runtime vendored",
+  "unity": "2020.3",
+  "keywords": [
+    "dda",
+    "dynamic difficulty",
+    "onnx",
+    "runtime"
+  ],
+  "author": {
+    "name": "Kevin Quarenghi"
+  }
+}

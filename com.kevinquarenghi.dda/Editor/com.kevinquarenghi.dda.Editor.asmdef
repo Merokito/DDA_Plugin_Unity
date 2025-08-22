@@ -1,0 +1,16 @@
+{
+    "name": "com.kevinquarenghi.dda.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:15abb487e4c68614a97f18f0ffe023e3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

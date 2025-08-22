@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>com.kevinquarenghi.dda:  File sorgente MetricData.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">com.kevinquarenghi.dda<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_metric_data_8cs_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MetricData.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_metric_data_8cs.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_abstraction.html">KevinQuarenghi.DDA.Abstraction</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html">MetricData</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#a763541f1f1624549bb7cce3ca508fb9a">   13</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#a763541f1f1624549bb7cce3ca508fb9a">Key</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#affaf7f14a19a19f1afbbd46e88846ea5">   15</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#affaf7f14a19a19f1afbbd46e88846ea5">Value</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#ac03d6ae3c588b9e5de044fdf62bae51a">   17</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#ac03d6ae3c588b9e5de044fdf62bae51a">Min</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#aa169ed65b513259a31e944183c3e0ef6">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#aa169ed65b513259a31e944183c3e0ef6">Max</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="ttc" id="anamespace_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_html"><div class="ttname"><a href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_abstraction.html">KevinQuarenghi.DDA.Abstraction</a></div><div class="ttdef"><b>Definition</b> <a href="_i_adjustment_handler_8cs_source.html#l00005">IAdjustmentHandler.cs:6</a></div></div>
+<div class="ttc" id="astruct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data_html"><div class="ttname"><a href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html">KevinQuarenghi.DDA.Abstraction.MetricData</a></div><div class="ttdoc">Rappresenta una metrica singola completa di range dinamico.</div><div class="ttdef"><b>Definition</b> <a href="#l00010">MetricData.cs:11</a></div></div>
+<div class="ttc" id="astruct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data_html_a763541f1f1624549bb7cce3ca508fb9a"><div class="ttname"><a href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#a763541f1f1624549bb7cce3ca508fb9a">KevinQuarenghi.DDA.Abstraction.MetricData.Key</a></div><div class="ttdeci">string Key</div><div class="ttdoc">Chiave univoca della metrica (es. &quot;Health&quot;).</div><div class="ttdef"><b>Definition</b> <a href="#l00013">MetricData.cs:13</a></div></div>
+<div class="ttc" id="astruct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data_html_aa169ed65b513259a31e944183c3e0ef6"><div class="ttname"><a href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#aa169ed65b513259a31e944183c3e0ef6">KevinQuarenghi.DDA.Abstraction.MetricData.Max</a></div><div class="ttdeci">float Max</div><div class="ttdoc">Valore massimo possibile (da cui normalizzare).</div><div class="ttdef"><b>Definition</b> <a href="#l00019">MetricData.cs:19</a></div></div>
+<div class="ttc" id="astruct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data_html_ac03d6ae3c588b9e5de044fdf62bae51a"><div class="ttname"><a href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#ac03d6ae3c588b9e5de044fdf62bae51a">KevinQuarenghi.DDA.Abstraction.MetricData.Min</a></div><div class="ttdeci">float Min</div><div class="ttdoc">Valore minimo possibile (da cui normalizzare).</div><div class="ttdef"><b>Definition</b> <a href="#l00017">MetricData.cs:17</a></div></div>
+<div class="ttc" id="astruct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data_html_affaf7f14a19a19f1afbbd46e88846ea5"><div class="ttname"><a href="struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#affaf7f14a19a19f1afbbd46e88846ea5">KevinQuarenghi.DDA.Abstraction.MetricData.Value</a></div><div class="ttdeci">float Value</div><div class="ttdoc">Valore corrente della metrica.</div><div class="ttdef"><b>Definition</b> <a href="#l00015">MetricData.cs:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4f6666a8f2ab10bc970eb7559668f031.html">Runtime</a></li><li class="navelem"><a class="el" href="dir_9369eea249c46d7c45bb6445110c6214.html">Abstraction</a></li><li class="navelem"><a class="el" href="_metric_data_8cs.html">MetricData.cs</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

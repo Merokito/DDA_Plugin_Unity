@@ -1,0 +1,29 @@
+# Unity package - ignore meta and temp
+*.meta
+*.tmp
+*.bak
+*.svd
+*.pdb
+*.mdb
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+
+# Build artifacts
+[Bb]uild*/
+[Bb]uilds*/
+[Ll]ogs/
+[Tt]emp/
+Obj/
+
+# Unity generated
+Library/
+MemoryCaptures/

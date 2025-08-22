@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>com.kevinquarenghi.dda: Riferimenti per la classe KevinQuarenghi.DDA.Monitoring.MetricSeries</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">com.kevinquarenghi.dda<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_metric_series.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membri pubblici</a> &#124;
+<a href="#pub-attribs">Attributi pubblici</a> &#124;
+<a href="#properties">ProprietÃ </a> &#124;
+<a href="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_metric_series-members.html">Elenco di tutti i membri</a>  </div>
+  <div class="headertitle"><div class="title">Riferimenti per la classe KevinQuarenghi.DDA.Monitoring.MetricSeries</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ScriptableObject che rappresenta una serie temporale di campioni per una metrica normalizzata [0–1]. <br  />
+ Viene salvata come asset e popolata in Play Mode attraverso chiamate a <a class="el" href="#a02d9bd2f88335c955e45725007f3c3d9" title="Aggiunge un nuovo campione alla serie temporale. Scarta il campione più vecchio se si supera maxSamples.">AddSample</a>.  
+ <a href="#details">Continua...</a></p>
+<div class="dynheader">
+Diagramma delle classi per KevinQuarenghi.DDA.Monitoring.MetricSeries</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_metric_series.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membri pubblici</h2></td></tr>
+<tr class="memitem:a02d9bd2f88335c955e45725007f3c3d9" id="r_a02d9bd2f88335c955e45725007f3c3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02d9bd2f88335c955e45725007f3c3d9">AddSample</a> (float time, float value)</td></tr>
+<tr class="memdesc:a02d9bd2f88335c955e45725007f3c3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggiunge un nuovo campione alla serie temporale. Scarta il campione più vecchio se si supera <a class="el" href="#a41717f75628ec21900ab67f5e4d9cb46" title="Numero massimo di campioni da mantenere in memoria. Quando si supera, i più vecchi vengono scartati.">maxSamples</a>.  <br /></td></tr>
+<tr class="separator:a02d9bd2f88335c955e45725007f3c3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6f8d94dea7a9148f81586dabe5a979" id="r_a1a6f8d94dea7a9148f81586dabe5a979"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a6f8d94dea7a9148f81586dabe5a979">Clear</a> ()</td></tr>
+<tr class="memdesc:a1a6f8d94dea7a9148f81586dabe5a979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rimuove tutti i campioni dalla serie. Utile da richiamare in <code>Awake()</code> o <code>OnEnable()</code> per inizializzare una nuova sessione di Play Mode.  <br /></td></tr>
+<tr class="separator:a1a6f8d94dea7a9148f81586dabe5a979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175dbac5463ee4eff7710e5969755244" id="r_a175dbac5463ee4eff7710e5969755244"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a175dbac5463ee4eff7710e5969755244">FlowRatio</a> ()</td></tr>
+<tr class="memdesc:a175dbac5463ee4eff7710e5969755244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ritorna la percentuale di campioni correnti che ricadono all’interno del band di flow [<a class="el" href="#ab7f1fb24be5fc42203a066cc5c43caba" title="Valore minimo del band di flow (range [0–1]). Valori al di sotto di questa soglia sono considerati fu...">lowerBound</a>–<a class="el" href="#a64237e53a8bfd0b86976d4ddabb523e0" title="Valore massimo del band di flow (range [0–1]). Valori al di sopra di questa soglia sono considerati f...">upperBound</a>].  <br /></td></tr>
+<tr class="separator:a175dbac5463ee4eff7710e5969755244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Attributi pubblici</h2></td></tr>
+<tr class="memitem:a25127370c3a2dc4cd8d6efb63da1a694" id="r_a25127370c3a2dc4cd8d6efb63da1a694"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25127370c3a2dc4cd8d6efb63da1a694">metricName</a></td></tr>
+<tr class="memdesc:a25127370c3a2dc4cd8d6efb63da1a694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nome descrittivo della metrica (ad esempio "Health", "CompletionTime", "SpawnRate").  <br /></td></tr>
+<tr class="separator:a25127370c3a2dc4cd8d6efb63da1a694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f1fb24be5fc42203a066cc5c43caba" id="r_ab7f1fb24be5fc42203a066cc5c43caba"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7f1fb24be5fc42203a066cc5c43caba">lowerBound</a> = 0.4f</td></tr>
+<tr class="memdesc:ab7f1fb24be5fc42203a066cc5c43caba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valore minimo del band di flow (range [0–1]). Valori al di sotto di questa soglia sono considerati fuori flow.  <br /></td></tr>
+<tr class="separator:ab7f1fb24be5fc42203a066cc5c43caba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64237e53a8bfd0b86976d4ddabb523e0" id="r_a64237e53a8bfd0b86976d4ddabb523e0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64237e53a8bfd0b86976d4ddabb523e0">upperBound</a> = 0.6f</td></tr>
+<tr class="memdesc:a64237e53a8bfd0b86976d4ddabb523e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valore massimo del band di flow (range [0–1]). Valori al di sopra di questa soglia sono considerati fuori flow.  <br /></td></tr>
+<tr class="separator:a64237e53a8bfd0b86976d4ddabb523e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41717f75628ec21900ab67f5e4d9cb46" id="r_a41717f75628ec21900ab67f5e4d9cb46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41717f75628ec21900ab67f5e4d9cb46">maxSamples</a> = 500</td></tr>
+<tr class="memdesc:a41717f75628ec21900ab67f5e4d9cb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numero massimo di campioni da mantenere in memoria. Quando si supera, i più vecchi vengono scartati.  <br /></td></tr>
+<tr class="separator:a41717f75628ec21900ab67f5e4d9cb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ae74d49300bb393e08cf756fc93006" id="r_a03ae74d49300bb393e08cf756fc93006"><td class="memItemLeft" align="right" valign="top">List&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03ae74d49300bb393e08cf756fc93006">timestamps</a> = new List&lt;float&gt;()</td></tr>
+<tr class="memdesc:a03ae74d49300bb393e08cf756fc93006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista dei timestamp (in secondi) in cui sono stati raccolti i campioni. Deve avere la stessa lunghezza di <a class="el" href="#ae197a4b5f85b030798cfcf951a388729" title="Lista dei valori corrispondenti ai timestamp in timestamps. I valori devono essere normalizzati nell&#39;...">values</a>.  <br /></td></tr>
+<tr class="separator:a03ae74d49300bb393e08cf756fc93006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae197a4b5f85b030798cfcf951a388729" id="r_ae197a4b5f85b030798cfcf951a388729"><td class="memItemLeft" align="right" valign="top">List&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae197a4b5f85b030798cfcf951a388729">values</a> = new List&lt;float&gt;()</td></tr>
+<tr class="memdesc:ae197a4b5f85b030798cfcf951a388729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista dei valori corrispondenti ai timestamp in <a class="el" href="#a03ae74d49300bb393e08cf756fc93006" title="Lista dei timestamp (in secondi) in cui sono stati raccolti i campioni. Deve avere la stessa lunghezz...">timestamps</a>. I valori devono essere normalizzati nell'intervallo [0–1].  <br /></td></tr>
+<tr class="separator:ae197a4b5f85b030798cfcf951a388729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+ProprietÃ </h2></td></tr>
+<tr class="memitem:a93becc460791ca4cac43b25a213b5a4c" id="r_a93becc460791ca4cac43b25a213b5a4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93becc460791ca4cac43b25a213b5a4c">Count</a><code> [get]</code></td></tr>
+<tr class="memdesc:a93becc460791ca4cac43b25a213b5a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numero corrente di campioni memorizzati nella serie.  <br /></td></tr>
+<tr class="separator:a93becc460791ca4cac43b25a213b5a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb1167d25dbb5e47e5762c3bc065e83" id="r_aabb1167d25dbb5e47e5762c3bc065e83"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabb1167d25dbb5e47e5762c3bc065e83">LastValue</a><code> [get]</code></td></tr>
+<tr class="memdesc:aabb1167d25dbb5e47e5762c3bc065e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restituisce l’ultimo valore campionato o 0 se la serie è vuota.  <br /></td></tr>
+<tr class="separator:aabb1167d25dbb5e47e5762c3bc065e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af123863033ecc2b16b96bfc9f057045c" id="r_af123863033ecc2b16b96bfc9f057045c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af123863033ecc2b16b96bfc9f057045c">LastTime</a><code> [get]</code></td></tr>
+<tr class="memdesc:af123863033ecc2b16b96bfc9f057045c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restituisce l’ultimo timestamp campionato o 0 se la serie è vuota.  <br /></td></tr>
+<tr class="separator:af123863033ecc2b16b96bfc9f057045c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<div class="textblock"><p>ScriptableObject che rappresenta una serie temporale di campioni per una metrica normalizzata [0–1]. <br  />
+ Viene salvata come asset e popolata in Play Mode attraverso chiamate a <a class="el" href="#a02d9bd2f88335c955e45725007f3c3d9" title="Aggiunge un nuovo campione alla serie temporale. Scarta il campione più vecchio se si supera maxSamples.">AddSample</a>. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00012">12</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+</div><h2 class="groupheader">Documentazione delle funzioni membro</h2>
+<a id="a02d9bd2f88335c955e45725007f3c3d9" name="a02d9bd2f88335c955e45725007f3c3d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d9bd2f88335c955e45725007f3c3d9">&#9670;&#160;</a></span>AddSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KevinQuarenghi.DDA.Monitoring.MetricSeries.AddSample </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aggiunge un nuovo campione alla serie temporale. Scarta il campione più vecchio se si supera <a class="el" href="#a41717f75628ec21900ab67f5e4d9cb46" title="Numero massimo di campioni da mantenere in memoria. Quando si supera, i più vecchi vengono scartati.">maxSamples</a>. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>Tempo (in secondi dall’avvio del Play Mode) in cui è avvenuto il campionamento. </td></tr>
+    <tr><td class="paramname">value</td><td>Valore della metrica rilevato in quel momento (0–1). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00086">86</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>        {</div>
+<div class="line"><span class="lineno">   88</span>            timestamps.Add(time);</div>
+<div class="line"><span class="lineno">   89</span>            values.Add(value);</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">if</span> (timestamps.Count &gt; maxSamples)</div>
+<div class="line"><span class="lineno">   91</span>            {</div>
+<div class="line"><span class="lineno">   92</span>                <span class="comment">// scarta il campione più vecchio</span></div>
+<div class="line"><span class="lineno">   93</span>                timestamps.RemoveAt(0);</div>
+<div class="line"><span class="lineno">   94</span>                values.RemoveAt(0);</div>
+<div class="line"><span class="lineno">   95</span>            }</div>
+<div class="line"><span class="lineno">   96</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1a6f8d94dea7a9148f81586dabe5a979" name="a1a6f8d94dea7a9148f81586dabe5a979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6f8d94dea7a9148f81586dabe5a979">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KevinQuarenghi.DDA.Monitoring.MetricSeries.Clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rimuove tutti i campioni dalla serie. Utile da richiamare in <code>Awake()</code> o <code>OnEnable()</code> per inizializzare una nuova sessione di Play Mode. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00103">103</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>        {</div>
+<div class="line"><span class="lineno">  105</span>            timestamps.Clear();</div>
+<div class="line"><span class="lineno">  106</span>            values.Clear();</div>
+<div class="line"><span class="lineno">  107</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a175dbac5463ee4eff7710e5969755244" name="a175dbac5463ee4eff7710e5969755244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175dbac5463ee4eff7710e5969755244">&#9670;&#160;</a></span>FlowRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float KevinQuarenghi.DDA.Monitoring.MetricSeries.FlowRatio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ritorna la percentuale di campioni correnti che ricadono all’interno del band di flow [<a class="el" href="#ab7f1fb24be5fc42203a066cc5c43caba" title="Valore minimo del band di flow (range [0–1]). Valori al di sotto di questa soglia sono considerati fu...">lowerBound</a>–<a class="el" href="#a64237e53a8bfd0b86976d4ddabb523e0" title="Valore massimo del band di flow (range [0–1]). Valori al di sopra di questa soglia sono considerati f...">upperBound</a>]. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00132">132</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  133</span>        {</div>
+<div class="line"><span class="lineno">  134</span>            <span class="keywordflow">if</span> (Count == 0) <span class="keywordflow">return</span> 0f;</div>
+<div class="line"><span class="lineno">  135</span>            <span class="keywordtype">int</span> inFlow = 0;</div>
+<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">foreach</span> (var v <span class="keywordflow">in</span> values)</div>
+<div class="line"><span class="lineno">  137</span>            {</div>
+<div class="line"><span class="lineno">  138</span>                <span class="keywordflow">if</span> (v &gt;= lowerBound &amp;&amp; v &lt;= upperBound)</div>
+<div class="line"><span class="lineno">  139</span>                    inFlow++;</div>
+<div class="line"><span class="lineno">  140</span>            }</div>
+<div class="line"><span class="lineno">  141</span>            <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)inFlow / Count;</div>
+<div class="line"><span class="lineno">  142</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentazione dei membri dato</h2>
+<a id="ab7f1fb24be5fc42203a066cc5c43caba" name="ab7f1fb24be5fc42203a066cc5c43caba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f1fb24be5fc42203a066cc5c43caba">&#9670;&#160;</a></span>lowerBound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float KevinQuarenghi.DDA.Monitoring.MetricSeries.lowerBound = 0.4f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valore minimo del band di flow (range [0–1]). Valori al di sotto di questa soglia sono considerati fuori flow. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00031">31</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<a id="a41717f75628ec21900ab67f5e4d9cb46" name="a41717f75628ec21900ab67f5e4d9cb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41717f75628ec21900ab67f5e4d9cb46">&#9670;&#160;</a></span>maxSamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KevinQuarenghi.DDA.Monitoring.MetricSeries.maxSamples = 500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Numero massimo di campioni da mantenere in memoria. Quando si supera, i più vecchi vengono scartati. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00051">51</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<a id="a25127370c3a2dc4cd8d6efb63da1a694" name="a25127370c3a2dc4cd8d6efb63da1a694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25127370c3a2dc4cd8d6efb63da1a694">&#9670;&#160;</a></span>metricName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string KevinQuarenghi.DDA.Monitoring.MetricSeries.metricName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nome descrittivo della metrica (ad esempio "Health", "CompletionTime", "SpawnRate"). </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00023">23</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<a id="a03ae74d49300bb393e08cf756fc93006" name="a03ae74d49300bb393e08cf756fc93006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ae74d49300bb393e08cf756fc93006">&#9670;&#160;</a></span>timestamps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;float&gt; KevinQuarenghi.DDA.Monitoring.MetricSeries.timestamps = new List&lt;float&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista dei timestamp (in secondi) in cui sono stati raccolti i campioni. Deve avere la stessa lunghezza di <a class="el" href="#ae197a4b5f85b030798cfcf951a388729" title="Lista dei valori corrispondenti ai timestamp in timestamps. I valori devono essere normalizzati nell&#39;...">values</a>. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00062">62</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<a id="a64237e53a8bfd0b86976d4ddabb523e0" name="a64237e53a8bfd0b86976d4ddabb523e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64237e53a8bfd0b86976d4ddabb523e0">&#9670;&#160;</a></span>upperBound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float KevinQuarenghi.DDA.Monitoring.MetricSeries.upperBound = 0.6f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valore massimo del band di flow (range [0–1]). Valori al di sopra di questa soglia sono considerati fuori flow. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00039">39</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae197a4b5f85b030798cfcf951a388729" name="ae197a4b5f85b030798cfcf951a388729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae197a4b5f85b030798cfcf951a388729">&#9670;&#160;</a></span>values</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;float&gt; KevinQuarenghi.DDA.Monitoring.MetricSeries.values = new List&lt;float&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista dei valori corrispondenti ai timestamp in <a class="el" href="#a03ae74d49300bb393e08cf756fc93006" title="Lista dei timestamp (in secondi) in cui sono stati raccolti i campioni. Deve avere la stessa lunghezz...">timestamps</a>. I valori devono essere normalizzati nell'intervallo [0–1]. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00069">69</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle proprietÃ </h2>
+<a id="a93becc460791ca4cac43b25a213b5a4c" name="a93becc460791ca4cac43b25a213b5a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93becc460791ca4cac43b25a213b5a4c">&#9670;&#160;</a></span>Count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KevinQuarenghi.DDA.Monitoring.MetricSeries.Count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Numero corrente di campioni memorizzati nella serie. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00112">112</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<a id="af123863033ecc2b16b96bfc9f057045c" name="af123863033ecc2b16b96bfc9f057045c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af123863033ecc2b16b96bfc9f057045c">&#9670;&#160;</a></span>LastTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float KevinQuarenghi.DDA.Monitoring.MetricSeries.LastTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restituisce l’ultimo timestamp campionato o 0 se la serie è vuota. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00126">126</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<a id="aabb1167d25dbb5e47e5762c3bc065e83" name="aabb1167d25dbb5e47e5762c3bc065e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb1167d25dbb5e47e5762c3bc065e83">&#9670;&#160;</a></span>LastValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float KevinQuarenghi.DDA.Monitoring.MetricSeries.LastValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restituisce l’ultimo valore campionato o 0 se la serie è vuota. </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="_metric_series_8cs_source.html#l00121">121</a> del file <a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a>.</p>
+
+</div>
+</div>
+<hr/>La documentazione per questa classe Ã¨ stata generata a partire dal seguente file:<ul>
+<li><a class="el" href="_metric_series_8cs_source.html">MetricSeries.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_kevin_quarenghi.html">KevinQuarenghi</a></li><li class="navelem"><a class="el" href="namespace_kevin_quarenghi_1_1_d_d_a.html">DDA</a></li><li class="navelem"><a class="el" href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_monitoring.html">Monitoring</a></li><li class="navelem"><a class="el" href="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_metric_series.html">MetricSeries</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

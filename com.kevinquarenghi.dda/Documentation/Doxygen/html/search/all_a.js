@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['max_0',['Max',['../struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#aa169ed65b513259a31e944183c3e0ef6',1,'KevinQuarenghi::DDA::Abstraction::MetricData']]],
+  ['maxsamples_1',['maxSamples',['../class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_metric_series.html#a41717f75628ec21900ab67f5e4d9cb46',1,'KevinQuarenghi::DDA::Monitoring::MetricSeries']]],
+  ['metricdata_2',['MetricData',['../struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html',1,'KevinQuarenghi::DDA::Abstraction']]],
+  ['metricdata_2ecs_3',['MetricData.cs',['../_metric_data_8cs.html',1,'']]],
+  ['metricname_4',['metricName',['../class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_metric_series.html#a25127370c3a2dc4cd8d6efb63da1a694',1,'KevinQuarenghi::DDA::Monitoring::MetricSeries']]],
+  ['metricsdashboard_5',['MetricsDashboard',['../class_kevin_quarenghi_1_1_d_d_a_1_1_editor_1_1_dashboard_1_1_metrics_dashboard.html',1,'KevinQuarenghi::DDA::Editor::Dashboard']]],
+  ['metricsdashboard_2ecs_6',['MetricsDashboard.cs',['../_metrics_dashboard_8cs.html',1,'']]],
+  ['metricseries_7',['MetricSeries',['../class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_metric_series.html',1,'KevinQuarenghi::DDA::Monitoring']]],
+  ['metricseries_2ecs_8',['MetricSeries.cs',['../_metric_series_8cs.html',1,'']]],
+  ['metricserieseditor_9',['MetricSeriesEditor',['../class_kevin_quarenghi_1_1_d_d_a_1_1_editor_1_1_monitoring_1_1_metric_series_editor.html',1,'KevinQuarenghi::DDA::Editor::Monitoring']]],
+  ['metricserieseditor_2ecs_10',['MetricSeriesEditor.cs',['../_metric_series_editor_8cs.html',1,'']]],
+  ['metricseriestests_11',['MetricSeriesTests',['../class_kevin_quarenghi_1_1_d_d_a_1_1_tests_1_1_engine_1_1_metric_series_tests.html',1,'KevinQuarenghi::DDA::Tests::Engine']]],
+  ['metricseriestests_2ecs_12',['MetricSeriesTests.cs',['../_metric_series_tests_8cs.html',1,'']]],
+  ['metricsmonitor_13',['MetricsMonitor',['../class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_metrics_monitor.html',1,'KevinQuarenghi::DDA::Monitoring']]],
+  ['metricsmonitor_2ecs_14',['MetricsMonitor.cs',['../_metrics_monitor_8cs.html',1,'']]],
+  ['min_15',['Min',['../struct_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_1_1_metric_data.html#ac03d6ae3c588b9e5de044fdf62bae51a',1,'KevinQuarenghi::DDA::Abstraction::MetricData']]],
+  ['mlconfigso_16',['MLConfigSO',['../class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html',1,'KevinQuarenghi::DDA::Config']]],
+  ['mlconfigso_2ecs_17',['MLConfigSO.cs',['../_m_l_config_s_o_8cs.html',1,'']]],
+  ['mldecisionengine_18',['MLDecisionEngine',['../class_kevin_quarenghi_1_1_d_d_a_1_1_engine_1_1_m_l_decision_engine.html',1,'KevinQuarenghi.DDA.Engine.MLDecisionEngine'],['../class_kevin_quarenghi_1_1_d_d_a_1_1_engine_1_1_m_l_decision_engine.html#ab99d8f78852660f6a38a943caadb00e3',1,'KevinQuarenghi.DDA.Engine.MLDecisionEngine.MLDecisionEngine()']]],
+  ['mldecisionengine_2ecs_19',['MLDecisionEngine.cs',['../_m_l_decision_engine_8cs.html',1,'']]],
+  ['mldecisionenginetest_20',['MLDecisionEngineTest',['../class_kevin_quarenghi_1_1_d_d_a_1_1_tests_1_1_engine_1_1_m_l_decision_engine_test.html',1,'KevinQuarenghi::DDA::Tests::Engine']]],
+  ['mldecisionenginetest_2ecs_21',['MLDecisionEngineTest.cs',['../_m_l_decision_engine_test_8cs.html',1,'']]],
+  ['mltrainingdatalogger_2ecs_22',['MLTrainingDataLogger.cs',['../_m_l_training_data_logger_8cs.html',1,'']]],
+  ['modelassets_23',['modelAssets',['../class_kevin_quarenghi_1_1_d_d_a_1_1_config_1_1_m_l_config_s_o.html#a4c620f75be481acd563afeedefaefc0f',1,'KevinQuarenghi::DDA::Config::MLConfigSO']]]
+];

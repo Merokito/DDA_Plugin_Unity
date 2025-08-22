@@ -1,0 +1,12 @@
+{
+  "name": "com.kevinquarenghi.dda.OnnxRuntime",
+  "autoReferenced": true,
+  "overrideReferences": false,
+  "allowUnsafeCode": false,
+  "references": [],
+  "precompiledReferences": [
+    "Packages/com.kevinquarenghi.dda/Plugins/Managed/Microsoft.ML.OnnxRuntime.dll"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": []
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>com.kevinquarenghi.dda:  File sorgente ChannelRegistry.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">com.kevinquarenghi.dda<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_channel_registry_8cs_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ChannelRegistry.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_channel_registry_8cs.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Linq;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_abstraction.html">KevinQuarenghi.DDA.Abstraction</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_core.html">    7</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_core.html">KevinQuarenghi.DDA.Core</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry.html">   13</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_function" href="class_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry.html#adfccf1154ebfb325c79525aa1ffa877e">ChannelRegistry</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">private</span> readonly List&lt;IChannel&gt; _channels;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry.html#adfccf1154ebfb325c79525aa1ffa877e">   21</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry.html#adfccf1154ebfb325c79525aa1ffa877e">ChannelRegistry</a>()</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            _channels = GameObject.FindObjectsOfType&lt;MonoBehaviour&gt;()</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                                  .OfType&lt;IChannel&gt;()</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                  .ToList();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry.html#a21c33f3176a330e4a532ea6bf60a7e31">   37</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry.html#a21c33f3176a330e4a532ea6bf60a7e31">GetAllMetrics</a>(</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            out Dictionary&lt;string, float&gt; rawMetrics,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            out Dictionary&lt;string, float&gt; normalizedMetrics)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            rawMetrics = <span class="keyword">new</span> Dictionary&lt;string, float&gt;();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            normalizedMetrics = <span class="keyword">new</span> Dictionary&lt;string, float&gt;();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">foreach</span> (var channel <span class="keywordflow">in</span> _channels)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keywordflow">foreach</span> (var m <span class="keywordflow">in</span> channel.GetMetrics())</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    rawMetrics[m.Key] = m.Value;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keywordtype">float</span> range = m.Max - m.Min;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    <span class="keywordtype">float</span> norm = range &gt; 0f</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        ? (m.Value - m.Min) / range</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                        : 0f;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    normalizedMetrics[m.Key] = Mathf.Clamp01(norm);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+</div>
+<div class="ttc" id="aclass_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry_html_a21c33f3176a330e4a532ea6bf60a7e31"><div class="ttname"><a href="class_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry.html#a21c33f3176a330e4a532ea6bf60a7e31">KevinQuarenghi.DDA.Core.ChannelRegistry.GetAllMetrics</a></div><div class="ttdeci">void GetAllMetrics(out Dictionary&lt; string, float &gt; rawMetrics, out Dictionary&lt; string, float &gt; normalizedMetrics)</div><div class="ttdoc">Raccoglie tutte le metriche da ogni channel.</div><div class="ttdef"><b>Definition</b> <a href="#l00037">ChannelRegistry.cs:37</a></div></div>
+<div class="ttc" id="aclass_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry_html_adfccf1154ebfb325c79525aa1ffa877e"><div class="ttname"><a href="class_kevin_quarenghi_1_1_d_d_a_1_1_core_1_1_channel_registry.html#adfccf1154ebfb325c79525aa1ffa877e">KevinQuarenghi.DDA.Core.ChannelRegistry.ChannelRegistry</a></div><div class="ttdeci">ChannelRegistry()</div><div class="ttdoc">Costruisce un nuovo registro, trovando in scena tutti i componenti che implementano IChannel.</div><div class="ttdef"><b>Definition</b> <a href="#l00021">ChannelRegistry.cs:21</a></div></div>
+<div class="ttc" id="anamespace_kevin_quarenghi_1_1_d_d_a_1_1_abstraction_html"><div class="ttname"><a href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_abstraction.html">KevinQuarenghi.DDA.Abstraction</a></div><div class="ttdef"><b>Definition</b> <a href="_i_adjustment_handler_8cs_source.html#l00005">IAdjustmentHandler.cs:6</a></div></div>
+<div class="ttc" id="anamespace_kevin_quarenghi_1_1_d_d_a_1_1_core_html"><div class="ttname"><a href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_core.html">KevinQuarenghi.DDA.Core</a></div><div class="ttdef"><b>Definition</b> <a href="#l00007">ChannelRegistry.cs:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4f6666a8f2ab10bc970eb7559668f031.html">Runtime</a></li><li class="navelem"><a class="el" href="dir_b05c51a7dc61612d752a1d5ca497c54f.html">Core</a></li><li class="navelem"><a class="el" href="_channel_registry_8cs.html">ChannelRegistry.cs</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "name": "com.kevinquarenghi.dda.Tests.Engine",
+    "rootNamespace": "",
+    "references": [
+        "com.kevinquarenghi.dda.Runtime",
+        "nunit.framework",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "com.kevinquarenghi.dda.OnnxRuntime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

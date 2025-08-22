@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>com.kevinquarenghi.dda:  File sorgente RuleCoverageTracker.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">com.kevinquarenghi.dda<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_rule_coverage_tracker_8cs_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RuleCoverageTracker.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_rule_coverage_tracker_8cs.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_core.html">KevinQuarenghi.DDA.Core</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_monitoring.html">KevinQuarenghi.DDA.Monitoring</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    [DisallowMultipleComponent]</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_rule_coverage_tracker.html">   16</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_rule_coverage_tracker.html">RuleCoverageTracker</a> : MonoBehaviour</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">private</span> readonly Dictionary&lt;int, float&gt; _latestActivations = <span class="keyword">new</span> Dictionary&lt;int, float&gt;();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> _lastRecordedFrame = -1;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> OnEnable()</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            DecisionEngineEvents.RuleActivated += RecordActivation;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> OnDisable()</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            DecisionEngineEvents.RuleActivated -= RecordActivation;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> RecordActivation(<span class="keywordtype">int</span> ruleIndex, <span class="keywordtype">float</span> activation)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordtype">int</span> currentFrame = Time.frameCount;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">if</span> (currentFrame != _lastRecordedFrame)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                _latestActivations.Clear();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                _lastRecordedFrame = currentFrame;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="comment">// Registro o aggiorno il grado di attivazione</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            _latestActivations[ruleIndex] = activation;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_rule_coverage_tracker.html#a211b4a4573bcaedad54e77daa3f2340a">   72</a></span>        <span class="keyword">public</span> IReadOnlyDictionary&lt;int, float&gt; <a class="code hl_function" href="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_rule_coverage_tracker.html#a211b4a4573bcaedad54e77daa3f2340a">GetLatestActivations</a>()</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">return</span> _latestActivations;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="ttc" id="aclass_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_rule_coverage_tracker_html"><div class="ttname"><a href="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_rule_coverage_tracker.html">KevinQuarenghi.DDA.Monitoring.RuleCoverageTracker</a></div><div class="ttdoc">Monitora in tempo reale quali regole del motore DDA si attivano, utilizzando il bus di eventi Decisio...</div><div class="ttdef"><b>Definition</b> <a href="#l00016">RuleCoverageTracker.cs:17</a></div></div>
+<div class="ttc" id="aclass_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_rule_coverage_tracker_html_a211b4a4573bcaedad54e77daa3f2340a"><div class="ttname"><a href="class_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_1_1_rule_coverage_tracker.html#a211b4a4573bcaedad54e77daa3f2340a">KevinQuarenghi.DDA.Monitoring.RuleCoverageTracker.GetLatestActivations</a></div><div class="ttdeci">IReadOnlyDictionary&lt; int, float &gt; GetLatestActivations()</div><div class="ttdoc">Restituisce le attivazioni registrate per il ciclo corrente: regola → grado μ.</div><div class="ttdef"><b>Definition</b> <a href="#l00072">RuleCoverageTracker.cs:72</a></div></div>
+<div class="ttc" id="anamespace_kevin_quarenghi_1_1_d_d_a_1_1_core_html"><div class="ttname"><a href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_core.html">KevinQuarenghi.DDA.Core</a></div><div class="ttdef"><b>Definition</b> <a href="_channel_registry_8cs_source.html#l00007">ChannelRegistry.cs:8</a></div></div>
+<div class="ttc" id="anamespace_kevin_quarenghi_1_1_d_d_a_1_1_monitoring_html"><div class="ttname"><a href="namespace_kevin_quarenghi_1_1_d_d_a_1_1_monitoring.html">KevinQuarenghi.DDA.Monitoring</a></div><div class="ttdef"><b>Definition</b> <a href="_metric_series_8cs_source.html#l00004">MetricSeries.cs:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4f6666a8f2ab10bc970eb7559668f031.html">Runtime</a></li><li class="navelem"><a class="el" href="dir_48a0f46f515e627049fc19a5963ec3ec.html">Monitoring</a></li><li class="navelem"><a class="el" href="_rule_coverage_tracker_8cs.html">RuleCoverageTracker.cs</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
