@@ -84,32 +84,31 @@ namespace KevinQuarenghi.DDA.Tests.Engine
         [Test]
         public void Inference_ReturnsExpectedOutput()
         {
-            // 1) nome del primo input/output
+            // nome del primo input/output
             string inputName = _session.InputMetadata.Keys.First();
             string outputName = _session.OutputMetadata.Keys.First();
 
-            // 2) dimensioni, sostituendo -1 con 1
+            // dimensioni, sostituendo -1 con 1
             int[] dims = _session.InputMetadata[inputName]
                 .Dimensions
                 .Select(d => d > 0 ? d : 1)
                 .ToArray();
 
-            // 3) array di zeri + DenseTensor
+            // array di zeri + DenseTensor
             int totalSize = dims.Aggregate(1, (prod, d) => prod * d);
             var buffer = new float[totalSize];
             var tensor = new DenseTensor<float>(buffer, dims);
 
-            // 4) NamedOnnxValue
+            // NamedOnnxValue
             var input = NamedOnnxValue.CreateFromTensor(inputName, tensor);
 
-            // 5) esegui Run(...)
             using var results = _session.Run(new[] { input });
 
-            // 6) sanity checks
+            // sanity checks
             Assert.IsNotNull(results, "Risultati inferenza nulli.");
             Assert.IsTrue(results.Any(), "Nessun output restituito.");
 
-            // 7) estrai tensor e verifica contenuto
+            // estrai tensor e verifica contenuto
             var outTensor = results.First(r => r.Name == outputName).AsTensor<float>();
             Assert.Greater(
                 outTensor.Length,

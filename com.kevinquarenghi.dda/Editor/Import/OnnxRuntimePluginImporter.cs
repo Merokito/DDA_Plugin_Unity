@@ -3,8 +3,8 @@ using UnityEditor;
 using UnityEditor.Compilation;
 
 /// <summary>
-/// Gestisce l’importazione del plugin ONNX Runtime in Unity.
-/// Disabilita automaticamente la compatibilità con l’Editor 
+/// Gestisce lï¿½importazione del plugin ONNX Runtime in Unity.
+/// Disabilita automaticamente la compatibilitï¿½ con lï¿½Editor 
 /// per la DLL vendorizzata di ONNX Runtime non appena viene importata o ricompilata.
 /// </summary>
 [InitializeOnLoad]
@@ -14,8 +14,8 @@ internal static class OnnxRuntimePluginImporter
     private const string PluginPath = "Packages/com.kevinquarenghi.dda/Plugins/Managed/Microsoft.ML.OnnxRuntime.dll";
 
     /// <summary>
-    /// Costruttore statico: si registra all’evento di fine compilazione
-    /// non appena l’editor carica questa classe.
+    /// Costruttore statico: si registra allï¿½evento di fine compilazione
+    /// non appena lï¿½editor carica questa classe.
     /// </summary>
     static OnnxRuntimePluginImporter()
     {
@@ -23,7 +23,7 @@ internal static class OnnxRuntimePluginImporter
     }
 
     /// <summary>
-    /// Disabilita la compatibilità della DLL ONNX Runtime con l’Editor.
+    /// Disabilita la compatibilitï¿½ della DLL ONNX Runtime con lï¿½Editor.
     /// Viene chiamato ad ogni compilazione e import iniziale.
     /// </summary>
     /// <param name="context">
@@ -35,7 +35,7 @@ internal static class OnnxRuntimePluginImporter
         if (importer == null)
             return;
 
-        // Se la DLL è ancora marcata come “compatibile con l’Editor”...
+        // Se la DLL ï¿½ ancora marcata come ï¿½compatibile con lï¿½Editorï¿½
         if (importer.GetCompatibleWithEditor())
         {
             // disabilitiamo

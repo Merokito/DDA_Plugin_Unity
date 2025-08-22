@@ -111,7 +111,7 @@ namespace KevinQuarenghi.DDA.Editor.Dashboard
                     GUILayout.ExpandWidth(true)
                 );
 
-                // 1) Titolo sopra il grafico
+                // Titolo sopra il grafico
                 Rect titleRect = new Rect(
                     row.x + k_MarginLeft,
                     row.y,
@@ -120,7 +120,7 @@ namespace KevinQuarenghi.DDA.Editor.Dashboard
                 );
                 EditorGUI.LabelField(titleRect, s.metricName, EditorStyles.boldLabel);
 
-                // 2) Rect del grafico, spostato in basso di k_TitleHeight
+                // Rect del grafico, spostato in basso di k_TitleHeight
                 Rect chart = new Rect(
                     row.x + k_MarginLeft,
                     row.y + k_TitleHeight + k_MarginTop,

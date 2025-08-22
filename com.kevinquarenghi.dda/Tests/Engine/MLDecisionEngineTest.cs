@@ -15,19 +15,19 @@ namespace KevinQuarenghi.DDA.Tests.Engine
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
-            // 1) Creo la config in memoria
+            // Creo la config in memoria
             var config = ScriptableObject.CreateInstance<MLConfigSO>();
 
-            // 2) Carico il TextAsset .onnx bytes del modello di test (Identity)
+            // Carico il TextAsset .onnx bytes del modello di test (Identity)
             const string assetPath =
                 "Packages/com.kevinquarenghi.dda/Tests/Models/test_model.onnx";
             TextAsset modelAsset = AssetDatabase.LoadAssetAtPath<TextAsset>(assetPath);
             Assert.IsNotNull(modelAsset, $"Impossibile trovare il modello in '{assetPath}'");
 
-            // 3) Assegno solo i modelAssets, non più metricNames
+            // Assegno solo i modelAssets, non più metricNames
             config.modelAssets = new[] { modelAsset };
 
-            // 4) Istanzio l'engine (il costruttore estrarrà automaticamente
+            // Istanzio l'engine (il costruttore estrarrà automaticamente
             //    inputName e outputName dal modello ONNX)
             _engine = (MLDecisionEngine)config.CreateEngine();
             Assert.IsNotNull(_engine, "MLDecisionEngine non è stato creato correttamente.");
