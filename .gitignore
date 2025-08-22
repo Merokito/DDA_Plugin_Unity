@@ -1,5 +1,4 @@
 # Unity package - ignore meta and temp
-*.meta
 *.tmp
 *.bak
 *.svd
