@@ -93,4 +93,4 @@ public class EnemySpawner : MonoBehaviour, IChannel, IAdjustmentHandler
 - Explore a twin project for Unreal Engine.  
 
 ## Related Repositories
-- [DDA ML Pipeline](https://github.com/Merokito/dda-ml-pipeline): Python scripts for training and exporting ONNX models.  
+- [DDA ML Pipeline](https://github.com/Merokito/DDA_ML_Pipeline): Python scripts for training and exporting ONNX models.  
