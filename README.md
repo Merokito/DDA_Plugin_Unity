@@ -27,7 +27,7 @@ The plugin is designed to be **agnostic to the host game**, with a clean archite
    ```json
    {
      "dependencies": {
-       "com.kevinquarenghi.dda": "https://github.com/Merokito/dda-unity-plugin.git"
+          "com.kevinquarenghi.dda": "https://github.com/Merokito/DDA_Plugin_Unity.git?path=com.kevinquarenghi.dda"
      }
    }
    ```
